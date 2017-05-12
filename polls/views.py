@@ -5,4 +5,8 @@ from django.http import HttpResponse
 
 # INDEX VIEW
 def index(request):
-  return HttpResponse('Index view reached')
+  context = {
+    'test_text': 'Hello World',
+    'list': [1, 2, 3, 4, 5]
+  }
+  return render(request, 'polls/index.html', context)

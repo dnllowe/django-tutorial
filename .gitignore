@@ -1,3 +1,5 @@
 DjangoTutorial/settings.py
 *__pycache__*
 *migrations*
+.vscode/*
+*.DS_Store*
